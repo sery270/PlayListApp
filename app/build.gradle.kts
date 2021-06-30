@@ -72,38 +72,14 @@ dependencies {
     // Timber
     implementation(ThirdPartyDependencies.timber)
 
-    // Paging 3
-    implementation(AndroidXDependencies.paging3)
-
-    // Dot Indicator
-    implementation(ThirdPartyDependencies.dotIndicator)
-
     // Room
     implementation(AndroidXDependencies.room)
     implementation(AndroidXDependencies.roomKtx)
     kapt(KaptDependencies.roomCompiler)
 
-    // Scarlet - Socket
-    implementation(ThirdPartyDependencies.scarlet)
-    implementation(ThirdPartyDependencies.scarletGson)
-    implementation(ThirdPartyDependencies.scarletOkHttp)
-
-    // OkHttp
-    implementation(platform(ThirdPartyDependencies.okHttpBom))
-    implementation(ThirdPartyDependencies.okHttp)
-    implementation(ThirdPartyDependencies.okHttpLoggingInterceptor)
-
     // Retrofit
     implementation(ThirdPartyDependencies.retrofit)
     implementation(ThirdPartyDependencies.retrofitSerialization)
-
-    // Firebase
-    implementation(platform(FirebaseDependency.firebaseBom))
-    implementation(FirebaseDependency.analyticsKtx)
-    implementation(FirebaseDependency.realtimeDatabseKtx)
-
-    // Kakao Login
-    implementation(ThirdPartyDependencies.kakaoLogin)
 
     // Test Implementation
     testImplementation(TestDependencies.jUnit)

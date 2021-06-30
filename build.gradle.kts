@@ -22,8 +22,6 @@ allprojects {
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
-        // KakaoSDK
-        maven { url = uri("https://devrepo.kakao.com/nexus/content/groups/public/") }
     }
 }
 

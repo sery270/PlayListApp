@@ -12,7 +12,6 @@ object AndroidXDependencies {
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt_version}"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
-    const val paging3 = "androidx.paging:paging-runtime:${Versions.paging_version}"
     const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment_version}"
     const val legacy = "androidx.legacy:legacy-support-v4:1.0.0"
     const val room = "androidx.room:room-runtime:${Versions.room_version}"
@@ -39,24 +38,10 @@ object KaptDependencies {
 object ThirdPartyDependencies {
     const val gson = "com.google.code.gson:gson:${Versions.gson_version}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide_version}"
-    const val dotIndicator = "com.tbuonomo:dotsindicator:${Versions.dotIndicatorVersion}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber_version}"
-    const val scarlet = "com.tinder.scarlet:scarlet:${Versions.scarlet_version}"
-    const val scarletOkHttp = "com.tinder.scarlet:websocket-okhttp:${Versions.scarlet_version}"
-    const val scarletGson = "com.tinder.scarlet:message-adapter-gson:${Versions.scarlet_version}"
-    const val okHttpBom = "com.squareup.okhttp3:okhttp-bom:${Versions.okHttp_version}"
-    const val okHttp = "com.squareup.okhttp3:okhttp"
-    const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
     const val retrofitSerialization =
         "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.kotlinx_serialization_version}"
-    const val kakaoLogin = "com.kakao.sdk:v2-user:${Versions.kakaoSDK_version}"
-}
-
-object FirebaseDependency {
-    const val firebaseBom = "com.google.firebase:firebase-bom:${Versions.firebase_version}"
-    const val analyticsKtx = "com.google.firebase:firebase-analytics-ktx"
-    const val realtimeDatabseKtx = "com.google.firebase:firebase-database-ktx"
 }
 
 object ClassPathPlugins {

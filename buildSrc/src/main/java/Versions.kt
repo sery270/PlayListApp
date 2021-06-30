@@ -8,7 +8,6 @@ object Versions {
     const val constraint_layout_version = "2.0.4"
     const val hilt_version = "2.35"
     const val nav_version = "2.3.3"
-    const val paging_version = "3.0.0"
     const val fragment_version = "1.3.2"
     const val room_version = "2.3.0"
     const val lifecycle_version = "2.3.1"
@@ -19,14 +18,9 @@ object Versions {
 
     const val gson_version = "2.8.6"
     const val glide_version = "4.12.0"
-    const val firebase_version = "27.1.0"
-    const val dotIndicatorVersion = "4.2"
     const val timber_version = "4.7.1"
-    const val scarlet_version = "0.1.12"
-    const val okHttp_version = "4.9.1"
     const val retrofit_version = "2.9.0"
     const val kotlinx_serialization_version = "0.8.0"
-    const val kakaoSDK_version = "2.5.2"
 
     const val junit_version = "4.13.2"
     const val espresso_version = "3.3.0"
