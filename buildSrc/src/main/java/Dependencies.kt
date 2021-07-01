@@ -46,5 +46,4 @@ object ThirdPartyDependencies {
 
 object ClassPathPlugins {
     const val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt_version}"
-    const val googleService = "com.google.gms:google-services:${Versions.google_service_version}"
 }
