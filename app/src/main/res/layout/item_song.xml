@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="song"
+            type="com.example.playlistapp.domain.Song" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +17,7 @@
             android:layout_width="104dp"
             android:layout_height="104dp"
             android:background="@color/gray"
+            srcFromUrl="@{song.image_url}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="sdfadfafsdfadfafaadfasdfadfafsdfadfafaadfa"
+            android:text="@{song.title}"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:maxLines="1"
@@ -38,7 +41,7 @@
             android:id="@+id/tv_artist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sdfadfafadfa"
+            android:text="@{song.artist}"
             android:textSize="20sp"
             android:maxLines="1"
             android:ellipsize="end"
