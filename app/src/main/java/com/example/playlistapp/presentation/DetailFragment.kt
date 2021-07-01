@@ -4,11 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentDetailBinding
-import timber.log.Timber
 
 class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_detail) {
 //    private val searchViewModel by viewModels<SearchViewModel>()

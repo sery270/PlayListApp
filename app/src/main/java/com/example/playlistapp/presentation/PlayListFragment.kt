@@ -44,5 +44,4 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
     }
 
 
-
 }
