@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
-import com.example.playlistapp.databinding.FragmentListBinding
+import com.example.playlistapp.databinding.FragmentPlayListBinding
 
 
-class ListFragment : BindingFragment<FragmentListBinding>(R.layout.fragment_list) {
+class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragment_play_list) {
     //    private val searchViewModel by viewModels<SearchViewModel>()
 //    private val searchResultAdapter by lazy { SearchResultAdapter(SearchItem.BOOK_ITEM_TYPE) }
 //    private val viewType: Int = SearchItem.BOOK_ITEM_TYPE
