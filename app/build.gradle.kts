@@ -79,6 +79,7 @@ dependencies {
     // Retrofit
     implementation(ThirdPartyDependencies.retrofit)
     implementation(ThirdPartyDependencies.retrofitSerialization)
+    implementation(ThirdPartyDependencies.retrofitGsonConverter)
 
     // Test Implementation
     testImplementation(TestDependencies.jUnit)

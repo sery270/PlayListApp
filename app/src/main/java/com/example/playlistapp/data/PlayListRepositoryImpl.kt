@@ -8,5 +8,5 @@ class PlayListRepositoryImpl @Inject constructor(
     private val playListDataSource: PlayListDataSource
 ) : PlayListRepository {
     override suspend fun getPlayList(): List<Song> =
-        playListDataSource.getPlayList().data.responseSongList.map { it.toSong() }
+        playListDataSource.getPlayList().map { it.toSong() }
 }

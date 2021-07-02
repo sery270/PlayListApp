@@ -25,9 +25,9 @@ data class ResponseSong(
     val updated_at: String,
 
     @SerializedName("user_id")
-    val user_id: String,
+    val user_id: Int
 
-    ) {
+) {
     fun toSong(): Song {
         return Song(
             title = title,

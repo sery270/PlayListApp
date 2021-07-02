@@ -42,6 +42,8 @@ object ThirdPartyDependencies {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
     const val retrofitSerialization =
         "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.kotlinx_serialization_version}"
+    const val retrofitGsonConverter =
+        "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
 }
 
 object ClassPathPlugins {

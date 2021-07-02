@@ -1,5 +1,6 @@
 package com.example.playlistapp.presentation
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -16,6 +17,7 @@ class PlayListAdapter : ListAdapter<Song, PlayListAdapter.SongHolder>(DiffCallba
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Song) {
             binding.song = item
+            Log.d("dfdf","${item}")
         }
     }
 
