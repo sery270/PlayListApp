@@ -1,16 +1,11 @@
 package com.example.playlistapp.data
 
-import android.content.Context
 import com.example.playlistapp.base.BaseResponse
 import javax.inject.Inject
 
 class PlayListDataSourceImpl @Inject constructor(
-    private val context: Context
+    private val service: PlayListService
 ) : PlayListDataSource {
-    override suspend fun fetchPlayList(): BaseResponse<WrapperResponseSong> {
-//        return withContext(Dispatchers.IO){
-//
-//        }
-        TODO()
-    }
+    override suspend fun getPlayList(): BaseResponse<WrapperResponseSong> = service.getPlayList()
+    override suspend fun getConfiguration(): BaseResponse<String> = service.getConfiguration()
 }

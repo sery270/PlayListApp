@@ -7,11 +7,6 @@ import javax.inject.Inject
 class PlayListRepositoryImpl @Inject constructor(
     private val playListDataSource: PlayListDataSource
 ) : PlayListRepository {
-    override suspend fun getPlayList(): List<Song> {
-        val playList = playListDataSource.fetchPlayList()
-        return when (playList.success) {
-            true -> playList.data.responseSongList.map { it.toSong() }
-            else -> throw IllegalArgumentException("JSON Parsing Error in responseSongList")
-        }
-    }
+    override suspend fun getPlayList(): List<Song> =
+        playListDataSource.getPlayList().data.responseSongList.map { it.toSong() }
 }
