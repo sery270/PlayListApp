@@ -4,15 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentPlayListBinding
 
 
 class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragment_play_list) {
-    //    private val searchViewModel by viewModels<SearchViewModel>()
-//    private val searchResultAdapter by lazy { SearchResultAdapter(SearchItem.BOOK_ITEM_TYPE) }
-//    private val viewType: Int = SearchItem.BOOK_ITEM_TYPE
+    private val playListViewModel by viewModels<PlayListViewModel>()
+    private val playListAdapter by lazy { PlayListAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,12 +36,13 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
     }
 
     private fun setRecyclerViewAdapter() {
-
+        binding.rvList.adapter = playListAdapter
+        playListViewModel.getPlayList()
     }
 
     private fun subscribeData() {
-
+        with(playListViewModel) {
+            playList.observe(viewLifecycleOwner) { playListAdapter.submitList(it) }
+        }
     }
-
-
 }
