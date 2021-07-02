@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentDetailBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_detail) {
 //    private val searchViewModel by viewModels<SearchViewModel>()
 //    private val searchResultAdapter by lazy { SearchResultAdapter(SearchItem.BOOK_ITEM_TYPE) }

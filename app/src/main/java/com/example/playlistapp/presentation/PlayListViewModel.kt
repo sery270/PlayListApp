@@ -13,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class PlayListViewModel @Inject constructor(
     private val playListRepository: PlayListRepository
-): ViewModel() {
+) : ViewModel() {
     private val _playList = MutableLiveData<List<Song>>()
     val playList: LiveData<List<Song>>
         get() = _playList

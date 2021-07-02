@@ -8,8 +8,10 @@ import androidx.fragment.app.viewModels
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentPlayListBinding
+import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
-
+@AndroidEntryPoint
 class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragment_play_list) {
     private val playListViewModel by viewModels<PlayListViewModel>()
     private val playListAdapter by lazy { PlayListAdapter() }
@@ -28,6 +30,7 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
+        Timber.d("dfasdfsasdf")
     }
 
     private fun initView() {
