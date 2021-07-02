@@ -13,7 +13,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragment_play_list) {
     private val playListViewModel by viewModels<PlayListViewModel>()
-    private val playListAdapter by lazy { PlayListAdapter() }
+    private val playListAdapter = PlayListAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
