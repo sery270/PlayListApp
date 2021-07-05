@@ -10,12 +10,18 @@ import com.example.playlistapp.R
 import com.example.playlistapp.databinding.ItemSongBinding
 import com.example.playlistapp.domain.Song
 
-class PlayListAdapter : ListAdapter<Song, PlayListAdapter.SongHolder>(DiffCallback) {
+class PlayListAdapter(
+    private val onClick: (item: Song) -> Unit
+) : ListAdapter<Song, PlayListAdapter.SongHolder>(DiffCallback) {
 
-    class SongHolder(private val binding: ItemSongBinding) :
+    inner class SongHolder(private val binding: ItemSongBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
         fun bind(item: Song) {
             binding.song = item
+            binding.onClick = {
+                onClick(item)
+            }
         }
     }
 

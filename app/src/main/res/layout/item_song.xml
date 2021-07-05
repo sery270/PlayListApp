@@ -6,12 +6,16 @@
         <variable
             name="song"
             type="com.example.playlistapp.domain.Song" />
+        <variable
+            name="on_click"
+            type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp">
+        android:paddingTop="16dp"
+        android:onClick="@{() -> on_click.invoke()}">
 
         <ImageView
             android:id="@+id/iv_album"
