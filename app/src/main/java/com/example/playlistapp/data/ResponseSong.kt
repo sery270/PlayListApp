@@ -1,5 +1,6 @@
 package com.example.playlistapp.data
 
+import com.example.playlistapp.di.RetrofitModule.BASE_URL
 import com.example.playlistapp.domain.Song
 import com.google.gson.annotations.SerializedName
 
@@ -32,7 +33,8 @@ data class ResponseSong(
         return Song(
             title = title,
             artist = description,
-            image_url = image_url,
+//            BASE_URL이 /로 끝나는데, image_url도 /로 시작하므로 image_url의 맨 앞 문자열 하나 삭제
+            image_url = BASE_URL + image_url.substring(1),
             audio_url = audio_url
         )
     }

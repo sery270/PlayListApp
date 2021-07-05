@@ -18,6 +18,5 @@ class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main
                 add<PlayListFragment>(R.id.fragment_container_view)
             }
         }
-//        setContentView(R.layout.item_song)
     }
 }
