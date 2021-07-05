@@ -73,7 +73,7 @@
 
 # 2️⃣ conventions
 
-
+[PlayListApp 프로젝트 conventions](https://github.com/sery270/PlayListApp/blob/master/DOCS/conventions.md)
 
 # 3️⃣ 마무리
 
