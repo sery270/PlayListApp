@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentPlayListBinding
@@ -53,7 +54,6 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
 
     private fun onClick(song: Song) {
         Log.d("asdf",song.toString())
-
-//        findNavController().navigate(R.id.action_userMoimFragment_to_chatFragment)
+        findNavController().navigate(PlayListFragmentDirections.actionPlayListFragmentToDetailFragment(song))
     }
 }

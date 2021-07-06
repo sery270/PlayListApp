@@ -32,6 +32,10 @@ class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_
     }
 
     private fun initView() {
+        arguments?.let {
+            val arguments = DetailFragmentArgs.fromBundle(it)
+            binding.song = arguments.song
+        }
         setRecyclerViewAdapter()
         subscribeData()
     }
@@ -41,7 +45,7 @@ class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_
     }
 
     private fun subscribeData() {
-
     }
+
 
 }
