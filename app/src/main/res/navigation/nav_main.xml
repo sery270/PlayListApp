@@ -10,7 +10,11 @@
         android:label="PlayListFragment" >
         <action
             android:id="@+id/action_playListFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -18,7 +22,11 @@
         android:label="DetailFragment" >
         <action
             android:id="@+id/action_detailFragment_to_playListFragment"
-            app:destination="@id/playListFragment" />
+            app:destination="@id/playListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <argument
             android:name="song"
             app:argType="com.example.playlistapp.domain.Song" />
