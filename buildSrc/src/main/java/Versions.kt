@@ -15,6 +15,9 @@ object Versions {
     const val gradle_version = "4.2.1"
     const val ktlint_version = "10.0.0"
 
+    const val rxAndroid_version = "3.0.0"
+    const val rxJava_version = "3.0.13"
+
     const val gson_version = "2.8.6"
     const val glide_version = "4.12.0"
     const val timber_version = "4.7.1"

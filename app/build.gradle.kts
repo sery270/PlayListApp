@@ -88,6 +88,10 @@ dependencies {
     androidTestImplementation(TestDependencies.androidTest)
     androidTestImplementation(TestDependencies.espresso)
     androidTestImplementation(TestDependencies.room)
+
+    // RxAndroid
+    implementation(ThirdPartyDependencies.rxAndroid)
+    implementation(ThirdPartyDependencies.rxJava)
 }
 
 ktlint {
