@@ -46,6 +46,7 @@ object ThirdPartyDependencies {
         "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
     const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rxAndroid_version}"
     const val rxJava = "io.reactivex.rxjava3:rxjava:${Versions.rxJava_version}"
+    const val rxJavaRetrofitAdapter ="com.github.akarnokd:rxjava3-retrofit-adapter:${Versions.rxJava_retrofit_adapter}"
 }
 
 object ClassPathPlugins {

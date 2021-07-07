@@ -17,6 +17,8 @@ object Versions {
 
     const val rxAndroid_version = "3.0.0"
     const val rxJava_version = "3.0.13"
+    const val rxJava_retrofit_adapter = "3.0.0"
+
 
     const val gson_version = "2.8.6"
     const val glide_version = "4.12.0"
