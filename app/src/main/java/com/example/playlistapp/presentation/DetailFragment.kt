@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
@@ -13,9 +12,6 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_detail) {
-//    private val searchViewModel by viewModels<SearchViewModel>()
-//    private val searchResultAdapter by lazy { SearchResultAdapter(SearchItem.BOOK_ITEM_TYPE) }
-//    private val viewType: Int = SearchItem.BOOK_ITEM_TYPE
 
     override fun onCreateView(
         inflater: LayoutInflater,
