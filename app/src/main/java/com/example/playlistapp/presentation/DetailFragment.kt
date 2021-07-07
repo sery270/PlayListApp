@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.example.playlistapp.R
 import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentDetailBinding
@@ -36,16 +38,9 @@ class DetailFragment : BindingFragment<FragmentDetailBinding>(R.layout.fragment_
             val arguments = DetailFragmentArgs.fromBundle(it)
             binding.song = arguments.song
         }
-        setRecyclerViewAdapter()
-        subscribeData()
+
+        binding.ivClose.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
-
-    private fun setRecyclerViewAdapter() {
-
-    }
-
-    private fun subscribeData() {
-    }
-
-
 }
