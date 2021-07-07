@@ -12,12 +12,11 @@ import com.example.playlistapp.base.BindingFragment
 import com.example.playlistapp.databinding.FragmentPlayListBinding
 import com.example.playlistapp.domain.Song
 import dagger.hilt.android.AndroidEntryPoint
-import timber.log.Timber
 
 @AndroidEntryPoint
 class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragment_play_list) {
     private val playListViewModel by viewModels<PlayListViewModel>()
-    private lateinit var playListAdapter : PlayListAdapter
+    private lateinit var playListAdapter: PlayListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,7 +31,7 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        playListAdapter = PlayListAdapter(onClick = {onClick(it)})
+        playListAdapter = PlayListAdapter(onClick = { onClick(it) })
         initView()
     }
 
@@ -53,7 +52,11 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
     }
 
     private fun onClick(song: Song) {
-        Log.d("asdf",song.toString())
-        findNavController().navigate(PlayListFragmentDirections.actionPlayListFragmentToDetailFragment(song))
+        Log.d("asdf", song.toString())
+        findNavController().navigate(
+            PlayListFragmentDirections.actionPlayListFragmentToDetailFragment(
+                song
+            )
+        )
     }
 }

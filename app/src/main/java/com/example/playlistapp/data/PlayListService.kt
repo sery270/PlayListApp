@@ -1,5 +1,6 @@
 package com.example.playlistapp.data
 
+import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 import retrofit2.http.Headers
 
@@ -7,7 +8,7 @@ interface PlayListService {
 
     @Headers("Content-Type:application/json")
     @GET("list.json")
-    suspend fun getPlayList(): List<ResponseSong>
+    fun getPlayList(): Single<List<ResponseSong>>
 
     @Headers("Content-Type:application/json")
     @GET("config.json")
