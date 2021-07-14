@@ -52,7 +52,6 @@ class PlayListFragment : BindingFragment<FragmentPlayListBinding>(R.layout.fragm
     }
 
     private fun onClick(song: Song) {
-        Log.d("asdf", song.toString())
         findNavController().navigate(
             PlayListFragmentDirections.actionPlayListFragmentToDetailFragment(
                 song
